@@ -19,12 +19,12 @@ parameters pnew, and return these parameters.
  - Aditya Vaishampayan
 
 ## License
-License file can be found [here](https://github.com/adityavaishampayan/SFM_cpp/blob/master/LICENSE)
+License file can be found [here](https://github.com/adityavaishampayan/Lucas_Kanade_Template_Tracker/blob/master/LICENSE)
 
 ```
 MIT License
 
-Copyright (c) 2020 Aditya Vaishampayan
+Copyright (c) 2019 Aditya Vaishampayan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
