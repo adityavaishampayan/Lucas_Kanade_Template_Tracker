@@ -103,12 +103,13 @@ def pyramid(img, levels):
 
 images = []
 imagesColor = []
-for file in glob.glob("car/frame*.jpg"):
+for file in glob.glob("../Lucas_Kanade_Template_Tracker/data-20200415T043230Z-001/data/car/frame*.jpg"):
     inputImage = cv2.imread(file)
     grey = cv2.cvtColor(inputImage, cv2.COLOR_BGR2GRAY)
     images.append(grey)
     imagesColor.append(inputImage)
 
+print(len(images))
 # Vase
 #rect = np.array([[110, 80], [185, 80], [185, 160] , [110, 160]])
 #rectDraw = np.array([[125, 90], [172, 90], [172, 150], [125, 150]])
@@ -154,7 +155,7 @@ for i in range(1, len(images)):
     cv2.imshow("Bounding Box", output_box)
     rectTemp = rect.astype(np.int32)
     rectTemp = rectTemp.reshape((-1, 1, 2))
-    # cv2.imshow("Poly",cv2.polylines(imagesColor[i],[rectTemp],True,(255,0,0),thickness = 5))
+    cv2.imshow("Poly",cv2.polylines(imagesColor[i],[rectTemp],True,(255,0,0),thickness = 5))
     output_video.write(output_box)
     if cv2.waitKey(0) & 0xFF == ord('q'):
         break 
