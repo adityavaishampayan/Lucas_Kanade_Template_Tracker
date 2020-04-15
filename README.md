@@ -62,6 +62,7 @@ parameters p in Step 9.
 
 ## Algorithm
 ![Algorithm steps](Images/steps.png)
+![Algorithm steps](Images/LK_flowchart.jpg)
 
 ## OpenCV installation
 ```
