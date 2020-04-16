@@ -3,9 +3,9 @@
 # Introduction
 In this project I have implemented a Lucas-Kanade (LK) template tracker.
 To initialize the tracker you need to dene a template by drawing a
-bounding box around the object to be tracked in the rst frame of the
+bounding box around the object to be tracked in therst frame of the
 video. For each of the subsequent frames the tracker will update an ane
-transform that warps the current frame so that the template in the rst
+transform that warps the current frame so that the template in therst
 frame is aligned with the warped current frame.
 
 At the core of the algorithm is a function aneLKtracker(img, tmp, rect,
@@ -63,6 +63,12 @@ parameters p in Step 9.
 ## Algorithm
 ![Algorithm steps](Images/steps.png)
 ![Algorithm steps](Images/LK_flowchart.jpg)
+
+## result
+![Car output](Images/car.gif)
+![Man output](Images/man.gif)
+![Object output](Images/object.gif)
+
 
 ## OpenCV installation
 ```
